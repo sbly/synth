@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <title>A Sine Wave Synthesizer</title>
+    <script src="synth.js"></script>
+</head>
+<body onload="setup()">
+<button onclick="play()">Play/Pause</button>
+<form>
+    <fieldset>
+    <legend>Wave Type</legend>
+    <input type="radio" name="type" value="sine" onclick="setType('sine')" checked>Sine
+    <br>
+    <input type="radio" name="type" value="square" onclick="setType('square')">Square
+    <br>
+    <input type="radio" name="type" value="square" onclick="setType('sawtooth')">Sawtooth
+    <br>
+    <input type="radio" name="type" value="square" onclick="setType('triangle')">Triangle
+    </fieldset>
+    <fieldset>
+        <legend>Wave Frequency</legend>
+        <input type="number" name="quantity" min="0" max="20000" step="1000" value="3000">
+    </fieldset>
+</form>
+</body>
+</html>
